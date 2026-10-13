@@ -1,0 +1,34 @@
+# bytecode / build
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# model + audio artifacts (never commit these, they're huge)
+models/*.onnx
+models/*.pt
+models/*.ckpt
+voices/*.wav
+voices/*.mp3
+renders/
+*.wav
+*.flac
+*.mp3
+
+# plugin cache from the loader
+.msdag_cache/
+*.plugin.lock
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# local config with API keys for cloud TTS backends
+config/local.toml
+*.secret.toml
